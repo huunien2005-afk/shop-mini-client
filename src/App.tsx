@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Banner from "./components/Banner";
 import ProductList from "./components/ProductList";
 import Footer from "./components/Footer";
 import { products } from "./data/products";
@@ -9,21 +10,13 @@ function App() {
     <>
       <Header />
       <main>
-        <ProductList title="Sản phẩm nổi bật" items={products} />
+        <Banner />
+        <div id="products">
+          <ProductList title="Sản phẩm nổi bật" items={products} />
+        </div>
       </main>
       <Footer />
     </>
-  );
-}
-
-export default App;
-function App() {
-  const shopName = "ShopBanHang";
-  return (
-    <div>
-      <h1>Xin chào {shopName}!</h1>
-      <p>Hôm nay là {new Date().toLocaleDateString("vi-VN")}</p>
-    </div>
   );
 }
 
