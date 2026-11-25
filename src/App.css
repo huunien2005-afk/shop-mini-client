@@ -175,3 +175,23 @@ main {
     align-items: flex-start;
   }
 }
+/* ---------- Danh mục ---------- */
+.category-section {
+  margin-bottom: 28px;
+}
+
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.category-chip {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+}
